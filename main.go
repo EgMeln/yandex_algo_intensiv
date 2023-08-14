@@ -14,10 +14,5 @@ func bubbleSort(arr []int) []int {
 }
 
 func main() {
-	graph := &node{Val: 2, R: &node{Val: 3}}
-	queue := []*node{}
-	queue = append(queue, graph)
-	var arr []int
-	res := bfs(queue, arr)
-	fmt.Println(res)
+	fmt.Println(findMaxPodsum([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4}))
 }
