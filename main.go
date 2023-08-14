@@ -14,5 +14,5 @@ func bubbleSort(arr []int) []int {
 }
 
 func main() {
-	fmt.Println(findMaxPodsum([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4}))
+	fmt.Println(search([]int{-1, 0, 3, 5, 9, 12}, 2))
 }
