@@ -15,8 +15,9 @@ func bubbleSort(arr []int) []int {
 
 func main() {
 	graph := &node{Val: 2, R: &node{Val: 3}}
-
-	sum := 0
-	dfs(graph, &sum)
-	fmt.Println(sum)
+	queue := []*node{}
+	queue = append(queue, graph)
+	var arr []int
+	res := bfs(queue, arr)
+	fmt.Println(res)
 }
