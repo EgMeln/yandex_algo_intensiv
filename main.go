@@ -1,8 +1,6 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func bubbleSort(arr []int) []int {
 	for i := 0; i < len(arr)-1; i++ {
@@ -16,8 +14,9 @@ func bubbleSort(arr []int) []int {
 }
 
 func main() {
-	fmt.Println(bubbleSort([]int{5, 3, 4, 1}))
-	fmt.Println(selectionSort([]int{5, 3, 4, 1}))
-	fmt.Println(insertionSort([]int{5, 3, 4, 1}))
+	graph := &node{Val: 2, R: &node{Val: 3}}
 
+	sum := 0
+	dfs(graph, &sum)
+	fmt.Println(sum)
 }
