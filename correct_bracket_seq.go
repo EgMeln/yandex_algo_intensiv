@@ -6,6 +6,10 @@ func correctBracketSeq(seq string) bool {
 		if seq[i] == '(' || seq[i] == '{' || seq[i] == '[' {
 			stack = append(stack, string(seq[i]))
 		} else {
+			if len(stack) == 0 {
+				return false
+			}
+
 			brck := stack[len(stack)-1]
 
 			switch seq[i] {
