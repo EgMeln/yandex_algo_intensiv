@@ -18,4 +18,6 @@ func bubbleSort(arr []int) []int {
 func main() {
 	fmt.Println(bubbleSort([]int{5, 3, 4, 1}))
 	fmt.Println(selectionSort([]int{5, 3, 4, 1}))
+	fmt.Println(insertionSort([]int{5, 3, 4, 1}))
+
 }
